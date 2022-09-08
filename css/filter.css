@@ -1,0 +1,66 @@
+.views-exposed-form .select-wrapper select{
+    border: unset;
+    background: #0005;
+    width: 120px;
+}
+.views-exposed-form .select-wrapper select option{
+    background: #000d;
+    outline: unset;
+    border: unset;
+    color: white;
+}
+.views-exposed-form .form-item{
+    margin-right: 0px;
+}
+.views-exposed-form .btn{
+    padding: 0;
+    background: unset;
+    font-size: 1em;
+    margin: 0;
+    color: #337ab7;
+    padding-bottom: 2px;
+}
+.views-exposed-form .btn:hover{
+    bottom: unset;
+    color: #337ab7;
+}
+.views-exposed-form .form-item, .views-exposed-form .form-actions {
+    display: inline-block;
+}
+.views-exposed-form .form-item > * {
+    display: block;
+}
+.views-exposed-form .form-item label{
+    font-weight: 200;
+    font-size: 0.8em;
+}
+.view-filters{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+.contextual-region .view-filters{
+    top: -55px;
+}
+.views-exposed-form .dropdown-menu{
+    left: unset;
+    right: 0;
+    padding: 10px;
+    width: fit-content;
+    min-width: unset;
+    background-color: #222;
+}
+.views-exposed-form .btn-default:active, .views-exposed-form .btn-default.active, .views-exposed-form .open > .dropdown-toggle.btn-default{
+    color: #337ab7;
+    background-color: unset;
+    background-image: none;
+    border-color: unset;
+}
+@media (min-width: 768px) {
+    .views-exposed-form .btn{
+        padding-top: 15px;
+    }
+    .contextual-region .view-filters{
+        top: -65px;
+    }
+}

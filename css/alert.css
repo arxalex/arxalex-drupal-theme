@@ -1,0 +1,7 @@
+.alert-success {
+    background: linear-gradient(90deg, #288d4d, #003d0b);
+    color: white;
+    background-color: unset;
+    border: unset;
+    backdrop-filter: blur(6px) saturate(200%);
+}

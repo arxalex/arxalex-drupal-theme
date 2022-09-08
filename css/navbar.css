@@ -1,0 +1,107 @@
+.logo>img{
+    position: absolute;
+    height: 34px;
+    filter: invert();
+    text-align: center;
+    left: calc(50vw - 245 / 150 * 30px / 2);
+    top: 15px;
+}
+.logo{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.region-navigation>nav{
+    display: inline-block;
+}
+.navbar-default{
+    background: unset;
+    border-color: unset;
+    border: unset;
+    margin-bottom: 50px;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    backdrop-filter: blur(10px) saturate(1.2) brightness(0.8);
+    position: absolute;
+    z-index: 30;
+    width: 100%;
+}
+.navbar-default .navbar-nav > li > a{
+    color: white;
+}
+.navbar-toggle{
+    border: unset;
+    position: relative;
+    float: unset;
+    left: 30px;
+    top: 13px;
+    margin-right: unset;
+    margin-top: unset;
+    margin-bottom: unset;
+}
+.navbar-default .collapsed .icon-bar{
+    transform: unset;
+    opacity: 100%;
+
+}
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: white;
+    transition: opacity 500ms, transform 500ms;
+    height: 3px;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    border-color: unset;
+    border: unset;
+    position: relative;
+    top: 15px;
+    padding: 0px 40px;
+}
+.navbar-collapse{
+    box-shadow: unset;
+    -webkit-box-shadow: unset;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+    background-color: unset;
+}
+.navbar-toggle .ib1{
+    transform: translate(0px, 7px) rotate(45deg);
+}
+.navbar-toggle .ib2{
+    transform: translate(-30px, 0px);
+    opacity: 0%;
+}
+.navbar-toggle .ib3{
+    transform: translate(0px, -7px) rotate(-45deg);
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+    color: white;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    color: white;
+    background-color: unset;
+
+}
+@media screen and (min-width: 768px) {
+    .logo{
+        position: unset;
+        width: unset; 
+        padding: unset; 
+        margin: unset;
+    }
+    .logo>img{
+        position: relative;
+        top: 8px;
+        left: unset;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        position: unset;
+    }
+    .navbar-default{
+        width: 100%;
+        max-width: unset !important;
+        padding-bottom: 15px;
+    }
+}
+

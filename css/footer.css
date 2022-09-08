@@ -1,0 +1,14 @@
+.footer{
+    margin-top: 0;
+    border: unset;
+    z-index: 30;
+}
+.footer .region-footer *{
+    display: inline-block;
+}
+.footer .menu--footer>li>a:focus{
+    background-color: unset;
+}
+.footer .menu--footer>li.first>a{
+    padding-left: unset;
+}

@@ -1,0 +1,9 @@
+.page-header{
+    border-bottom: unset;
+}
+.project .content a {
+    text-decoration: underline;
+}
+.content p, .content ul{
+    color: white;
+}

@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Default theme implementation of a views exposed form.
+ *
+ * Available variables:
+ * - form: A render element representing the form.
+ *
+ * @ingroup templates
+ *
+ * @see template_preprocess_views_exposed_form()
+ */
+#}
+{{ attach_library('arxalex/filter') }}
+{% if q is not empty %}
+  {#
+    This ensures that, if clean URLs are off, the 'q' is added first,
+    as a hidden form element, so that it shows up first in the POST URL.
+  #}
+  {{ q }}
+{% endif %}
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="filterMenu" aria-haspopup="true" aria-expanded="true">
+    <span class="glyphicon glyphicon-filter" aria-hidden="true"></span>
+  </button>
+<div class="form--inline form-inline clearfix dropdown-menu" aria-labelledby="filterMenu">
+  <li>{{ form }}</li>
+</div>
+</div>

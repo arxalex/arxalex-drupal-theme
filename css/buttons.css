@@ -1,0 +1,67 @@
+.btn{
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: unset;
+    padding: 9px 18px;
+    font-size: 20px;
+    line-height: 1.42857143;
+    border-radius: 8px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    bottom: 0px;
+    position: relative;
+    transition: bottom 500ms, box-shadow 500ms;
+    box-shadow: none;
+}
+.btn:active, .btn.active{
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
+    box-shadow: inset 0 3px 5px rgb(0 0 0 / 13%);
+}
+.btn:hover, .btn:focus, .btn.focus{
+    color: #333;
+    text-decoration: none;
+    bottom: 5px;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus{
+    outline: unset;
+    outline-offset: unset;
+}
+.btn-primary{
+    color: #fff;
+    background-color: unset;
+    background: linear-gradient(90deg, #3854c6, #001a59);
+}
+.btn-primary:active:hover, .btn-primary.active:hover, .open > .dropdown-toggle.btn-primary:hover, .btn-primary:active:focus, .btn-primary.active:focus, .open > .dropdown-toggle.btn-primary:focus, .btn-primary:active.focus, .btn-primary.active.focus, .open > .dropdown-toggle.btn-primary.focus{
+    color: #fff;
+    background-color: unset;
+    background: linear-gradient(90deg, #283c8d, #00123d);
+}
+.btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary{
+    color: #fff;
+    background-color: unset;
+    background: linear-gradient(90deg, #283c8d, #00123d);
+}
+.btn-primary:hover{
+    color: #fff;
+    background-color: unset;
+    background: linear-gradient(90deg, #283c8d, #00123d);
+    box-shadow: #a418e5aa 0px 5px 20px;
+}
+.btn-primary:focus, .btn-primary.focus{
+    color: #fff;
+    background-color: unset;
+    background: linear-gradient(90deg, #283c8d, #00123d);
+}
