@@ -2,6 +2,9 @@ framework:
   css:
     theme:
       css/style.css: {}
+      css/form-control.css: {}
+      css/panel.css: {}
+      css/select.css: {}
       css/navbar.css: {}
       css/buttons.css: {}
       css/alert.css: {}

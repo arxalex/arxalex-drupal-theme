@@ -1,0 +1,13 @@
+.panel-default{
+    border-color: #353535;
+}
+
+.panel-default > .panel-heading {
+    color: unset;
+    background-color: #353535;
+    border-color: #353535;
+}
+
+.panel{
+    background-color: #252525;
+}

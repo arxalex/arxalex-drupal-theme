@@ -17,14 +17,15 @@
     background: unset;
     font-size: 1em;
     margin: 0;
-    color: #337ab7;
+    color: #ba9822;
     padding-bottom: 2px;
 }
 .views-exposed-form .btn:hover{
     bottom: unset;
-    color: #337ab7;
+    color: #ba9822;
 }
-.views-exposed-form .form-item, .views-exposed-form .form-actions {
+.views-exposed-form .form-item, 
+.views-exposed-form .form-actions {
     display: inline-block;
 }
 .views-exposed-form .form-item > * {
@@ -50,8 +51,10 @@
     min-width: unset;
     background-color: #222;
 }
-.views-exposed-form .btn-default:active, .views-exposed-form .btn-default.active, .views-exposed-form .open > .dropdown-toggle.btn-default{
-    color: #337ab7;
+.views-exposed-form .btn-default:active, 
+.views-exposed-form .btn-default.active, 
+.views-exposed-form .open > .dropdown-toggle.btn-default{
+    color: #ba9822;
     background-color: unset;
     background-image: none;
     border-color: unset;
