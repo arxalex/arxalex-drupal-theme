@@ -77,7 +77,7 @@
     'clearfix',
   ]
 %}
-{% set tags = content.field_tags|merge({}) %}
+{% set tags = content.field_tags|merge({ '#label_display' : "above" }) %}
 <article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
@@ -100,11 +100,10 @@
           {{ author_name }}
         </div>
       </div>
-      <i class="fa-regular fa-clock"></i>{{ date }}
-      {% set dtags = tags|merge({ '#label_display' : "above" }) %}
-      <i class="fa-regular fa-hashtag"></i>{{ tags|json_encode() }}
-      {{ dtags|json_encode() }}
-      {{ dtags }}
+      <i class="fa-regular fa-clock"></i>
+      {{ date }}
+      <i class="fa-regular fa-hashtag"></i>
+      {{ tags }}
     </footer>
   {% endif %}
 
