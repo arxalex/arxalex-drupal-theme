@@ -79,7 +79,7 @@
   ]
 %}
 {% set tags = content.field_tags|merge({ '#label_display' : "above" }) %}
-{% set comments = content.feild_comments|merge({ '#label_display' : "above" }) %}
+{% set comments = content.comment|merge({ '#label_display' : "above" }) %}
 <article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
