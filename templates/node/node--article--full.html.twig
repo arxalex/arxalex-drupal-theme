@@ -77,7 +77,7 @@
     'clearfix',
   ]
 %}
-{% set tags = content.field_tags|merge({ 'label_display' : 'above' }) %}
+{% set tags = content.field_tags|merge({ label_display : 'above' }) %}
 <article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
