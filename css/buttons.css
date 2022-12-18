@@ -73,3 +73,31 @@
 .btn-primary:hover{
     box-shadow: #ba9822aa 0px 5px 20px;
 }
+
+.btn-success, 
+.btn-success:hover
+.btn-success:focus, 
+.btn-success.focus
+.btn-success:active
+.btn-success.active
+.btn-success:active:hover, 
+.btn-success.active:hover, 
+.btn-success:active:focus, 
+.btn-success:active.focus, 
+.btn-success.active:focus, 
+.btn-success.active.focus, 
+.open > .dropdown-toggle.btn-success,
+.open > .dropdown-toggle.btn-success:hover, 
+.open > .dropdown-toggle.btn-success:focus, 
+.open > .dropdown-toggle.btn-success.focus {
+    color: #fff !important;
+    background-color: #008844 !important;
+}
+
+.btn-success:hover{
+    box-shadow: #008844aa 0px 5px 20px;
+}
+
+.btn-default:hover{
+    box-shadow: #ffffffaa 0px 5px 20px;
+}
