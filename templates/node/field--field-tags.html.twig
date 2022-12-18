@@ -53,7 +53,7 @@
   ]
 %}
 
-{% if not (label_display == 'hidden') %}
+{% if label_display != 'hidden' %}
   {% if label_hidden %}
     {% if multiple %}
       <div{{ attributes.addClass(classes, 'field--items') }}>
