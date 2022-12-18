@@ -79,6 +79,7 @@
   ]
 %}
 {% set tags = content.field_tags|merge({ '#label_display' : "above" }) %}
+{% set comments = content.comment|merge({ '#label_display' : "above" }) %}
 <article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
@@ -89,12 +90,12 @@
   {% endif %}
   {{ title_suffix }}
 
-  <div{{ content_attributes.addClass(['content', 'col-sm-8', 'col-md-9']) }}>
+  <div{{ content_attributes.addClass(['content', 'col-sm-8']) }}>
     {{ content }}
   </div>
 
   {% if display_submitted %}
-    <footer class="col-sm-4 col-md-3">
+    <footer class="col-sm-4">
     <div {{author_attributes.addClass("author-block")}}>
       <div {{ author_attributes.addClass("author-image") }}>{{ author_picture }}</div>
         <div{{ author_attributes.addClass('author') }}>
@@ -110,5 +111,6 @@
       {{ tags }}
     </footer>
   {% endif %}
+  {% comments %}
 
 </article>
