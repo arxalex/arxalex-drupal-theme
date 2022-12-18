@@ -77,8 +77,9 @@
     'clearfix',
   ]
 %}
-{% set tags = content.field_tags|merge({}) %}
-{% set tags.label_hidden = false %}
+{%
+  set tags = content.field_tags
+%}
 <article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
@@ -102,6 +103,9 @@
         </div>
       </div>
       <i class="fa-regular fa-clock"></i>{{ date }}
+      {{
+        tags.label_hidden = false
+      }}
       <i class="fa-regular fa-hashtag"></i>{{ tags }}
     </footer>
   {% endif %}
