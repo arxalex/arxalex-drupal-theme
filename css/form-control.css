@@ -3,3 +3,7 @@
     color: #ddd;
     background-color: #252525;
 }
+
+.form-control:focus {
+    border-color: #ba9822;
+}
