@@ -77,7 +77,7 @@
     'clearfix',
   ]
 %}
-{% set tags = clone(content.field_tags) %}
+{% set tags = content.field_tags|merge({}) %}
 {% set tags.label_hidden = false %}
 <article{{ attributes.addClass(classes) }}>
 
