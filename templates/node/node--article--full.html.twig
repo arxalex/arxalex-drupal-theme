@@ -93,10 +93,10 @@
 
   {% if display_submitted %}
     <footer>
-      {{ author_picture }}
+      <div {{ attributes.addClass("author-image") }}>{{ author_picture }}</div>
       <div{{ author_attributes.addClass('author') }}>
         {{ author_name }}
-        <span>{{ date }}</span>
+        {{ date }}
       </div>
     </footer>
   {% endif %}
