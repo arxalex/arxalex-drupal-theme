@@ -9,6 +9,7 @@
 }
 .author-image img{
     border-radius: 50%;
+    width: 60px;
 }
 .author-name-label{
     font-weight: 700;

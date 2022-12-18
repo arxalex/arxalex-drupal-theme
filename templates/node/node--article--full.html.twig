@@ -75,6 +75,7 @@
     not node.isPublished() ? 'is-unpublished',
     view_mode ? view_mode|clean_class,
     'clearfix',
+    'row',
   ]
 %}
 {% set tags = content.field_tags|merge({ '#label_display' : "above" }) %}
@@ -88,21 +89,19 @@
   {% endif %}
   {{ title_suffix }}
 
-  <div{{ content_attributes.addClass('content') }}>
+  <div{{ content_attributes.addClass(['content', 'col-sm-8']) }}>
     {{ content }}
   </div>
 
   {% if display_submitted %}
-    <footer>
+    <footer class="col-sm-4">
     <div {{author_attributes.addClass("author-block")}}>
       <div {{ author_attributes.addClass("author-image") }}>{{ author_picture }}</div>
         <div{{ author_attributes.addClass('author') }}>
           {{ author_name }}
         </div>
       </div>
-      <i class="fa-regular fa-clock"></i>
       {{ date }}
-      <i class="fa-regular fa-hashtag"></i>
       {{ tags }}
     </footer>
   {% endif %}
