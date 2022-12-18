@@ -101,8 +101,10 @@
         </div>
       </div>
       <i class="fa-regular fa-clock"></i>{{ date }}
-      
+      {% set dtags = tags|merge({ '#label_display' : "above" }) %}
       <i class="fa-regular fa-hashtag"></i>{{ tags|json_encode() }}
+      {{ dtags|json_encode() }}
+      {{ dtags }}
     </footer>
   {% endif %}
 
