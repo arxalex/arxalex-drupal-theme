@@ -102,7 +102,11 @@
         </div>
       </div>
       {{ date }}
+      {{ date|json_encode() }}
       {{ tags }}
+      {{ node.getCreatedTime|format_date('medium') }}
+      {{ node.getCreatedTime|format_date('medium')|json_encode() }}
+
     </footer>
   {% endif %}
 
