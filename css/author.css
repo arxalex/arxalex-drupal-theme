@@ -1,0 +1,15 @@
+.author{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.author-block{
+    display: flex;
+    gap: 1em;
+}
+.author-image img{
+    border-radius: 50%;
+}
+.author-name-label{
+    font-weight: 700;
+}

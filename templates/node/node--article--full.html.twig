@@ -93,11 +93,14 @@
 
   {% if display_submitted %}
     <footer>
-      <div {{ attributes.addClass("author-image") }}>{{ author_picture }}</div>
-      <div{{ author_attributes.addClass('author') }}>
-        {{ author_name }}
-        {{ date }}
+    <div {{author_attributes.addClass("author-block")}}>
+      <div {{ author_attributes.addClass("author-image") }}>{{ author_picture }}</div>
+        <div{{ author_attributes.addClass('author') }}>
+          {{ author_name }}
+        </div>
       </div>
+      <i class="fa fa-clock-o" aria-hidden="true"></i>{{ date }}
+      <i class="fa fa-tags" aria-hidden="true"></i>{{ content.field_tags }}
     </footer>
   {% endif %}
 
