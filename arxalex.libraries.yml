@@ -19,6 +19,10 @@ frontpage:
     theme:
       css/front.css: {}
       css/projects.css: {}
+tags:
+  css:
+    theme:
+      css/tags.css: {}
 
 projects:
   css:

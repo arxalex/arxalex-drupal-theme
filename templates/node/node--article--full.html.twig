@@ -101,10 +101,12 @@
           {{ author_name }}
         </div>
       </div>
-      <i class="fa-regular fa-clock"></i>
-      <span{{ date.attributes }}>
-        {{ node.getCreatedTime|format_date('custom', 'd M Y') }}
-      </span>
+      <div class="mode_date">
+        <i class="fa-regular fa-clock"></i>
+        <span{{ date.attributes }}>
+          {{ node.getCreatedTime|format_date('custom', 'd M Y') }}
+        </span>
+      </div>
       {{ tags }}
     </footer>
   {% endif %}
