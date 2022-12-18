@@ -78,8 +78,7 @@
   ]
 %}
 {%
-  set tags = content.field_tags
-  set tags.label_hidden = false
+  set tags = content.field_tags|merge({'label_hidden': 'false'})
 %}
 <article{{ attributes.addClass(classes) }}>
 
