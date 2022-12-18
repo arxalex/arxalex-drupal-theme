@@ -3,6 +3,7 @@ framework:
     theme:
       css/style.css: {}
       css/form-control.css: {}
+      css/filter-wrapper.css: {}
       css/panel.css: {}
       css/select.css: {}
       css/navbar.css: {}
