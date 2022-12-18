@@ -77,6 +77,10 @@
     'clearfix',
   ]
 %}
+{%
+  set tags = content.field_tags
+  tags.label_hidden = false
+%}
 <article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
@@ -99,8 +103,8 @@
           {{ author_name }}
         </div>
       </div>
-      <i class="fa fa-clock-o" aria-hidden="true"></i>{{ date }}
-      <i class="fa fa-tags" aria-hidden="true"></i>{{ content.field_tags }}
+      <i class="fa-regular fa-clock"></i>{{ date }}
+      <i class="fa-regular fa-hashtag"></i>{{ tags }}
     </footer>
   {% endif %}
 
