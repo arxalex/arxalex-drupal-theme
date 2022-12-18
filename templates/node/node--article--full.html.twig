@@ -101,7 +101,7 @@
         </div>
       </div>
       <i class="fa-regular fa-clock"></i>{{ date }}
-      {% set tags.label_hidden = false %}
+      {% set tagsdup = tags|merge({ 'label_hidden' = false }) %}
       <i class="fa-regular fa-hashtag"></i>{{ tags }}
     </footer>
   {% endif %}
