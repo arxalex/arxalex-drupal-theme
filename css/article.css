@@ -1,3 +1,13 @@
 .node_date{
     font-size: 0.8em;
 }
+.article footer {
+    background: #252525;
+    border: 1px solid #353535;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}

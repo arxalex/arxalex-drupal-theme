@@ -89,19 +89,19 @@
   {% endif %}
   {{ title_suffix }}
 
-  <div{{ content_attributes.addClass(['content', 'col-sm-8']) }}>
+  <div{{ content_attributes.addClass(['content', 'col-sm-8', 'col-md-9']) }}>
     {{ content }}
   </div>
 
   {% if display_submitted %}
-    <footer class="col-sm-4">
+    <footer class="col-sm-4 col-md-3">
     <div {{author_attributes.addClass("author-block")}}>
       <div {{ author_attributes.addClass("author-image") }}>{{ author_picture }}</div>
         <div{{ author_attributes.addClass('author') }}>
           {{ author_name }}
         </div>
       </div>
-      <div class="mode_date">
+      <div class="node_date">
         <i class="fa-regular fa-clock"></i>
         <span{{ date.attributes }}>
           {{ node.getCreatedTime|format_date('custom', 'd M Y') }}
