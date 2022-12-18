@@ -25,6 +25,12 @@ projects:
     theme:
       css/projects.css: {}
 
+article:
+  css:
+    theme:
+      css/article.css: {}
+      css/author.css: {}
+
 filter:
   dependencies:
     - core/jquery
