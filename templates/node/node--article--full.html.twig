@@ -79,6 +79,8 @@
   ]
 %}
 {% set tags = content.field_tags|merge({ '#label_display' : "above" }) %}
+{% set date = date|merge({ 'items' : [{ 'content' : node.getCreatedTime|format_date('custom', 'd M Y') }] }) %}
+
 <article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
@@ -102,10 +104,7 @@
         </div>
       </div>
       {{ date }}
-      {{ date|json_encode() }}
       {{ tags }}
-      {{ node.getCreatedTime|format_date('medium') }}
-      {{ node.getCreatedTime|format_date('medium')|json_encode() }}
 
     </footer>
   {% endif %}
