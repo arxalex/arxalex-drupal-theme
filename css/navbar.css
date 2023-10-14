@@ -17,6 +17,7 @@
     display: inline-block;
 }
 .navbar-default{
+    margin-top: 0;
     background: unset;
     border-color: unset;
     border: unset;
