@@ -18,13 +18,13 @@
 }
 .navbar-default{
     margin-top: 0 !important;
-    background: unset;
+    background: #0002;
     border-color: unset;
     border: unset;
     margin-bottom: 50px;
     padding-top: 15px;
     padding-bottom: 35px;
-    backdrop-filter: blur(10px) saturate(1.2) brightness(0.8);
+    backdrop-filter: blur(10px) saturate(1.2);
     position: absolute;
     z-index: 30;
     width: 100%;
